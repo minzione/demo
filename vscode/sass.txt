@@ -1,0 +1,7 @@
+sass编辑后格式
+	easysass.formats[i].format 支持四个选项用以编译生成对应风格的 CSS：
+　　 nested：嵌套缩进的 css 代码。
+　　 expanded：没有缩进的、扩展的css代码。
+　　 compact：简洁格式的 css 代码。
+　　 compressed：压缩后的 css 代码。
+	easysass.formats[i].extension 顾名思义就是设置编译输出的文件名了，此处可以自定义文件名，输出的 CSS 文件名会按照“当前 Sass 文件名（不含拓展名）+此处自定义文件名”的格式来生成。例如：设置 easysass.formats[i].extension 为 ".min.css"，假设当前的 Sass 文件名为“style.scss”，则编译输出的 CSS 文件名为“style.min.css”。

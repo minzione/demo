@@ -1,0 +1,13 @@
+css	
+	设置三角形的阴影
+		.list-li-triangle{
+            position: absolute;
+            left: 20px;
+            top: -15px;
+            width: 0;
+            height: 0;
+            border: transparent solid 15px;
+            border-bottom-color: #fff;
+            // box-shadow: 0 0 5px #000;
+            filter: drop-shadow(0 -0 2px #000);   // 设置的三角形底部有阴影，可以给他设置个东西覆盖底部
+          }
