@@ -1,1 +1,6 @@
 http://liuxiaofan.com/2013/08/22/1437.html
+破解的版本 
+	今天webstorm更新了版本，发现以前的激活地址http://idea.imsxm.com都不能用了。在激活对话框中点击第三个选项 license server，然后输入地址 
+	http://idea.singee77.com 
+	http://im.js.cn:8888 
+	，然后就进入了，理论上webstorm可以使用的话JetBrains其他类似产品都能使用，大家可以试下，还在查找webstorm激活地址的朋友也赶快试试吧！
