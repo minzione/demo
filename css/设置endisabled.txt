@@ -1,0 +1,6 @@
+css	
+	设置endisabled
+		.list{
+            -webkit-filter: grayscale(1);
+			filter: grayscale(1);  // 相当于设置了他的不透明度
+          }
