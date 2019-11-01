@@ -1,0 +1,8 @@
+angular
+	angular1
+		angular1现在名字就是 angularjs
+		https://angularjs.org/    英文的
+		http://www.angularjs.net.cn/ 中文的
+	angular2
+		angular2名字是 angular
+		https://angular.cn

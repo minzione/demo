@@ -1,0 +1,30 @@
+对于angular中的$watch这个
+	http://www.jb51.net/article/111921.htm
+	$scope.$watch("person", function(n, o){
+	  if(n == o){
+		return;
+	  }
+	  $scope.status = "changed";
+	},true)
+	$watch(watchExpression, [listener], [objectEquality]);
+
+	第一个是监听的参数名称，剩下两个可选参数分别为处理函数和是相等比较的方式，对于后者文档如是说：
+	Compare for object equality using angular.equals instead of comparing for reference equality. 
+	即是否使用angular.equals方法进行比较
+对于angularjs中的ng-model
+	https://zhidao.baidu.com/question/626927524555741164.html
+	<input ng-model="selectedfilter.name" type="text" ng-keyup="getselectedfilter()">
+	$scope.selectedfilter = {
+        name: 123
+    };
+    $scope.getselectedfilter = function () {
+        console.log($scope.selectedfilter.name)
+    };
+	//因为有原型继承的原因，所以他不会改变，这个时候我们可以使用对象下的属性来获取值得改变
+自定义指令directive 
+	link函数和controller函数的区别
+	link 一般里面用来操作dom
+	controller 一般里面用来操作业务逻辑   业务逻辑乃是为呈现视图之前而准备的数据或者是与其他指令进行数据交互而暴露这个api
+	https://www.cnblogs.com/CreateMyself/p/5568202.html
+自定义指令调用父元素的带参数函数
+	http://blog.csdn.net/ft6302244/article/details/44559349

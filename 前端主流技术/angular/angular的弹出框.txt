@@ -1,0 +1,19 @@
+angular
+	里面的弹出模板   https://www.jianshu.com/p/2cbf835509b1
+	使用方法
+	使用ui-bootstrap-tpls.js
+	注入服务：'$uibModal',和$$uibModalInstance
+	angular.module('app'),['ui.bootstrap,mlm/erp/modal/choose-department.html]).controller(function(){
+		ar modalInstance = $uibModal.open({
+      			animation: true,
+      			templateUrl: templateUrl,
+      			controller: controller,
+      			backdrop: true,
+      			size: size,
+      			resolve: {
+        			msgResult: function () {
+          				return { };
+        			}
+      			}
+    		});
+	})

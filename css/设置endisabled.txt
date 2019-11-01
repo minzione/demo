@@ -1,8 +1,0 @@
-css	
-	设置元素的灰色效果
-		.list{
-            -webkit-filter: grayscale(1);
-			filter: grayscale(1);  // 相当于设置了他的不透明度
-          }
-	三种设置图片的灰色效果
-		http://tieba.baidu.com/p/3009205941

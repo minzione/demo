@@ -1,0 +1,7 @@
+angular-md5.js   支持md5加密因为后台一般都会解密
+	http://www.riafan.com/angular-md5-js-support-utf8/  // 使他支持utf-8
+angular-Touch  // 触屏滑动事件
+	http://blog.csdn.net/coding_my_future/article/details/51288272   // 配置一下就可以使用touch事件
+angular 的 ui.router
+	http://blog.csdn.net/zcl_love_wx/article/details/52034193
+	https://www.cnblogs.com/littlemonk/p/5500801.html     // 很详细

@@ -1,0 +1,16 @@
+		$uibModal.open({
+			templateUrl: 'batch-files.html',
+			controller: 'batchFilesCtrl',
+			size: 'lg',
+			resolve: {
+				data: function () {
+					return {
+						files: data,
+						userId: userId,
+						batchId: batch.id,
+						status: status,
+						javaServer: javaServer
+					};
+				}
+			}
+		});

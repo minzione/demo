@@ -1,0 +1,71 @@
+/* css 编译格式 */
+  // nested（嵌套）
+    ul {
+      line-height: 30px; }
+      ul li {
+        font-size: 12px; }
+  // compact（紧凑）
+    ul { line-height: 30px; }
+    ul li { font-size: 12px; }
+  // expanded（扩展）
+    ul {
+      line-height: 30px;
+    }
+    ul li {
+      font-size: 12px;
+    }
+  // compressed（压缩）
+    ul{line-height: 30px}ul li{font-size: 12px}
+
+
+/* 设置三角形的阴影 */
+  .list-li-triangle{
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    width: 0;
+    height: 0;
+    border: transparent solid 15px;
+    border-bottom-color: #fff;
+    // box-shadow: 0 0 5px #000;
+    filter: drop-shadow(0 -0 2px #000);   // 设置的三角形底部有阴影，可以给他设置个东西覆盖底部
+  }
+
+/* 设置元素的灰色效果 */
+  .list{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);  // 相当于设置了他的不透明度
+  }
+
+/* 文字实现渐变 */
+  span{
+    display: inline-block;
+    color: #fff;
+    font-family: '微软雅黑';
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(51, 51, 51, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/* 设置简单的下拉动画效果 */
+  .BOX{
+		.sub-menus{
+			position:absolute;
+			top:100%;
+			left:0;
+			width:100%;
+			z-index:3;
+			background-color:#f8f8f8;
+			border:1px solid #ddd;
+			border-top:none;
+			transition: max-height .4s;
+			-webkit-transition: max-height .4s;
+			max-height:0;
+			overflow:hidden;
+		}
+		&:hover{
+			.sub-menus{
+				max-height:280px;
+			}
+		}
+	}

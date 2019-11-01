@@ -1,0 +1,29 @@
+app.service('getNums', function () {  // 创建一个服务
+  var nums = 1;
+  function _getter() {
+    return nums;
+  }
+
+  function _setter( a ) {
+      nums = a;
+  }
+  return {
+    getter: _getter,
+    setter: _setter
+  };
+})
+app.controller('abb', ['$scope', 'getNums'， function ($scope, getNums) { // 注入服务
+    $scope.service = getNums;
+    $scope.$watch ('service.getter()', function (newVal) {
+        $scope.newsdownload = newVal;
+        $scope.sidelist[0].news = newVal;
+    })
+}])
+app.controller('add', ['$scope', 'getNums'， function ($scope, getNums) { // 注入服务
+    $scope.service = getNums;
+    $scope.$watch ('service.getter()', function (newVal) {
+        $scope.newsdownload = newVal;
+        $scope.sidelist[0].news = newVal;
+    })
+	getNums.setter(5)
+}])

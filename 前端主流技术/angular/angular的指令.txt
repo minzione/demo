@@ -1,0 +1,5 @@
+ng-include
+	指定一部分的html文件
+	<div ng-include="view/person/tab.html"> </div>
+指令中的scope的范围
+	https://blog.coding.net/blog/angularjs-directive-isolate-scope?type=early
