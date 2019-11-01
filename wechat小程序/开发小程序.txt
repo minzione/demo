@@ -1,0 +1,6 @@
+#		小程序的开发
+## 		打开开发工具的网址   https://mp.weixin.qq.com/debug/wxadoc/dev/
+## 		下载安装工具： https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=201818
+		使用微信扫一扫，进行一个登陆
+		可以选择开发小程序或微信号
+		开发小程序有一个appID，你可以选择下面的没有appID开发，

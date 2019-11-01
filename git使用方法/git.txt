@@ -1,0 +1,32 @@
+提交代码到远程仓库，首先得设置好自己的身份
+	git config --global user.name （github的用户名）  // 设置自己的名字
+	git config --global user.name 				// 可查看设置的名字
+	git config --global user.email '(注册github的邮箱)'   // 设置自己的邮箱地址
+	git config --global user.email   			// 可查看设置的邮箱地址
+
+下载文件到分支上
+	git clone ..
+	cd (文件名)
+	git branch -a
+	git checkout -b develop origin/develop  //切换到分支
+	npm install
+git分支
+	git branch （name） // 创建一个分支
+	git checkout -b (name)  // 创建一个分支并立即切换到该分支下
+	git branch          // 查看分支命令
+	git checkout (name) // 切换分支命令
+	git merge  （name）         // 合并分支命令
+	git branch -d (name) // 删除分支
+上传文件
+	git add .||(指定的一个文件夹)
+	git commit -m '提交说明'
+	git pull
+	git push
+代码变换
+	git diff --stat    // 查看代码与上个缓存区文件的区别
+	git diff --staged   // 查看缓存区文件与上次提交的代码之间的区别
+	git diff --cached   // 查看以前输出的命令
+查看修改了那些文件
+	git status 可以看到本地修改那些文件
+	
+	
